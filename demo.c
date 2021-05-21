@@ -14,6 +14,7 @@ int main()
 	char buf[100]={0};
 	pid_t cld_pid;
         par_fd=getpid();
+	//par_fd=getpid();
 	printf("yuanshi pid is %d\n",par_fd);
 	if((fd=open("temp",O_CREAT|O_RDWR|O_TRUNC,0664))==-1)
 	{
